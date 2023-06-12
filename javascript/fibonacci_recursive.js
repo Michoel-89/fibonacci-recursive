@@ -1,6 +1,12 @@
 function fibonacci(n) {
-  // type your code here
+  if (n < 2) {
+    return n;
+  }
+  let total = fibonacci(n - 1) + fibonacci(n - 2)
+  console.log(total)
+  return total;
 }
+
 
 if (require.main === module) {
   // add your own tests in here
